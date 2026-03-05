@@ -1,0 +1,40 @@
+services:
+  express:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: express
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./src:/app/src
+      - ./.env:/app/.env
+      - ./.env.template:/app/.env.template
+      - ./sever.js:/app/sever.js
+      - ./seed.js:/app/seed.js
+      - ./uploads:/app/uploads
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+  redis:
+    image: redis:5
+    container_name: redis
+    ports:
+      - "6379:6379"
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    ports:
+      - "8082:8081"
+    depends_on:
+      - redis
+volumes:
+  mongo_data:
