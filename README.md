@@ -67,3 +67,14 @@ Swagger UI provides an interactive way to test API endpoints.
 - Docker
 
 ---
+
+# ⚙️ Installation
+
+## 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+```
+
+---
