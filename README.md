@@ -73,8 +73,8 @@ Swagger UI provides an interactive way to test API endpoints.
 ## 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/RaChhun123/REST-API.git
+cd REST-API
 ```
 
 ---
