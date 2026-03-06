@@ -77,4 +77,42 @@ git clone https://github.com/RaChhun123/REST-API.git
 cd REST-API
 ```
 
----
+## 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+## 3️⃣ Setup environment variables
+
+Create a `.env` file in the root directory.
+
+Example:
+
+```bash
+PORT=5000
+
+MONGODB_URL=mongodb://localhost:27017/mydatabase
+
+CACHE_SERVER=redis://localhost:6379
+
+NODE_ENV=development
+
+JWT_ACCESS_SECRET=your_access_secret
+JWT_REFRESH_SECRET=your_refresh_secret
+
+ACCESS_TOKEN_EXPIRE=15m
+REFRESH_TOKEN_EXPIRE=7d
+
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+```
+
+## ▶️ Running the Project
+
+Start the development server:
+
+```bash
+npm start
+```
