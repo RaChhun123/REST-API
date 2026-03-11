@@ -5,13 +5,18 @@ The project includes **JWT authentication**, **Redis caching**, **Cloudinary fil
 
 This API is designed using modern backend practices such as:
 
-- Authentication with **JWT**
-- **Redis caching** for performance
-- **MongoDB + Mongoose** for database management
-- **Cloudinary** for image storage
-- **Swagger UI** for API documentation
-- **Docker** for containerized deployment
-- **Rate limiting & validation** for security
+- ⚡ RESTful API architecture
+- 🔐 JWT Authentication with Passport
+- 📦 MongoDB with Mongoose ODM
+- 📄 API Documentation with Swagger
+- 🐳 Docker container support
+- 📤 File uploads using Multer + Cloudinary
+- 🔑 Password hashing with bcrypt
+- 🛡️ Request validation with express-validator
+- 🚦 Rate limiting for security
+- 📊 Pagination using mongoose-paginate-v2
+- 🧾 Logging using Morgan
+- ⚡ Redis support for caching
 
 ---
 
